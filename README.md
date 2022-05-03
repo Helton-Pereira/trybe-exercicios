@@ -5,17 +5,17 @@ Este repositório contem todas as atividades de aprendizagem desenvolvidas por _
 
 O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :white_check_mark:
+## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [ ] 1-3: _Unix & Shell- Part 1_
-- [ ] 1-4: _Unix & Shell- Part 2_
+- [X] 1-3: _Unix & Shell- Part 1_
+- [X] 1-4: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
 
-- [ ] 2-1: _O que Ã© e para que serve?_
-- [ ] 2-2: _Entendendo os comandos_
+- [X] 2-1: _O que é e para que serve?_
+- [X] 2-2: _Entendendo os comandos_
 - [ ] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução - HTML & CSS
@@ -72,20 +72,20 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript AssÃ­ncrono e Callbacks_
+- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Promises_
 - [ ] 9-3: _[Projeto - Carrinho de Compras]()_
 
 ##### Bloco 10: Jest
 
 - [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes AssÃ­ncronos_
+- [ ] 10-2: _Jest - Testes Assí­ncronos_
 - [ ] 10-3: _Jest - Simulando comportamentos_
 - [ ] 10-4: _[Projeto - Jest AssÃ­ncrono e Mocking]()_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 11: IntroduÃ§Ã£o - React
+##### Bloco 11: Introdução - React
 
 - [ ] 11-1: _'Hello, world!' no React!_
 - [ ] 11-2: _Componentes React_
@@ -94,7 +94,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 ##### Bloco 12: React
 
 - [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulÃ¡rios no React_
+- [ ] 12-2: _Eventos e formulários no React_
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### Bloco 13: React
@@ -104,9 +104,9 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [ ] 13-3: _React Router_
 - [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
 
-##### Bloco 14: Metodologias Ãgeis
+##### Bloco 14: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologias Ãgeis_
+- [ ] 14-1: _Metodologias Ágeis_
 - [ ] 14-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 15: Testes em React
@@ -117,7 +117,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ##### Bloco 16: IntroduÃ§Ã£o ao Redux
 
-- [ ] 16-1: _IntroduÃ§Ã£o ao Redux_
+- [ ] 16-1: _Introdução ao Redux_
 - [ ] 16-2: _React com Redux - Parte 1_
 - [ ] 16-3: _React com Redux - PrÃ¡tica_
 - [ ] 16-4: _React com Redux - Parte 2_
