@@ -1,0 +1,35 @@
+header {
+    background-color: rgb(148, 148, 243);
+    
+}
+
+nav {
+   
+}
+
+ul {
+    list-style: none;
+    background-color: aqua;
+}
+
+li {
+    display: inline-block;
+    margin-right: 25%;
+}
+article {
+    /* estilizar depois */
+}
+
+.curiosities {
+    /* estilizar depois */
+}
+
+#references {
+    /* estilizar depois */
+}
+
+aside {
+    background-color: rgb(199, 176, 221);
+    float: right;
+    height: 200px;
+}
