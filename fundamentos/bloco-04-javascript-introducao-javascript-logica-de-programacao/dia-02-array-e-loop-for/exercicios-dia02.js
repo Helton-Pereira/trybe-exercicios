@@ -67,5 +67,13 @@ for (let index4 = 0; index4 < numbers.length; index4+=1) {
 
 // exercicio 8
 
+let array = [0]
+
+for (let index5 = 0; index5 <= array.length25; index5+=1) {
+    array.push(index5 += 1)
+    
+}
+console.log(array[0])
+
 
 
