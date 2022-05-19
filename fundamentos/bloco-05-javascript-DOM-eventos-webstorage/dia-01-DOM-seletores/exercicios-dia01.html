@@ -37,7 +37,7 @@
     <main class="main-content">
       <section class="center-content">
         <p>Texto padrão do nosso site</p>
-        <p id="2anos">-----</p>
+        <p id=>-----</p>
         <p>Trybe</p>
       </section>
     </main>
@@ -54,10 +54,23 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-      document.getElementById("2anos").innerText = "Em 2 anos estarei morando sozinho por causa do novo emprego"
+       function mudarTexto() {
+        let paragrafo = document.getElementsByTagName('p')[1];
+        paragrafo.innerText = "Em 2 anos estarei morando sozinho por causa do novo emprego"
+       }
+       mudarTexto();
 
-      let quadrado = document.getElementsByClassName("main-content");
-      quadrado[0].style.background = "rgb(76, 164, 109)";
+       function changeYellowColor() {
+           let quadrado = document.getElementsByClassName('main-content')[0];
+           quadrado.style.background = "rgb(76, 164, 109)";
+       }
+       changeYellowColor();
+
+       function changeRedColor() {
+           let quadradoMeio = document.getElementsByClassName('center-content')[0];
+           quadradoMeio.style.background = "white";
+       }
+       changeRedColor();
 
     </script>
   </body>
