@@ -70,15 +70,46 @@
     corpo.appendChild(principal);
 
     //   Exercício 3
-    let seção = document.createElement('section');
-    seção.className = 'center-content';
-    principal.appendChild(seção);
+    let secao0 = document.createElement('section');
+    secao0.className = 'center-content';
+    principal.appendChild(secao0);
 
     //   Exercício 4
     let paragrafo = document.createElement('p');
     paragrafo.innerText = 'As veiz dá medo';
-    seção.appendChild(paragrafo);
+    secao0.appendChild(paragrafo);
+
+    //   Exercício 5
+    let secaoEsquerda = document.createElement('section');
+    secaoEsquerda.className = 'left-content';
+    principal.appendChild(secaoEsquerda);
+
+    //   Exercício 6
+    let secaoDireita = document.createElement('section');
+    secaoDireita.className = 'right-content';
+    principal.appendChild(secaoDireita);
+
+    //   Exercício 7
+    let imagem = document.createElement('img');
+    imagem.src = 'https://picsum.photos/200';
+    imagem.className = 'small-image';
+    secaoEsquerda.appendChild(imagem);
+
+    //   Exercício 8
+    let lista = document.createElement('ul');
+    secaoDireita.appendChild(lista);
+    let arrayNumeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+    for (let index = 0; index < arrayNumeros.length; index += 1) {
+        let listaNumeros = arrayNumeros[index];
+        let numeroLinha = document.createElement('li');
+        numeroLinha.innerHTML = listaNumeros;
+        lista.appendChild(numeroLinha);
+    }
+
     
+
+ 
+
 
 
 
