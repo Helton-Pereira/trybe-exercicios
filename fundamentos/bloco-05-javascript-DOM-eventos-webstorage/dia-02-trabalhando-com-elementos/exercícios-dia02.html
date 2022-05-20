@@ -64,6 +64,24 @@
       let corpo = document.getElementsByTagName('body')[0];
       corpo.appendChild(titulo);
 
+    //   Exercício 2
+    let principal = document.createElement('main');
+    principal.className = 'main-content';
+    corpo.appendChild(principal);
+
+    //   Exercício 3
+    let seção = document.createElement('section');
+    seção.className = 'center-content';
+    principal.appendChild(seção);
+
+    //   Exercício 4
+    let paragrafo = document.createElement('p');
+    paragrafo.innerText = 'As veiz dá medo';
+    seção.appendChild(paragrafo);
+    
+
+
+
     </script>
   </body>
 </html>
