@@ -1,4 +1,4 @@
-const sum = require('./exercicio7-3');
+const {sum, myRemove} = require('./exercicio7-3');
 
 
 describe('the function of sum', () => {
@@ -17,7 +17,6 @@ describe('the function of sum', () => {
   test('Lança mensagem "parameters must be numbers"', () => {
     expect(() => {sum(4, '5')}).toThrowError(Error);
   });
-  
-  
-
 })
+
+
