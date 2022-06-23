@@ -100,8 +100,17 @@ const books = [
 
 // Exercício 3
 
-function getNamedBook(array) {
-    return array.find((book) => book.name.length === 26)
-  }
+// function getNamedBook(array) {
+//     return array.find((book) => book.name.length === 26)
+//   }
 
-  console.log(getNamedBook(books));
+//   console.log(getNamedBook(books));
+
+// Exercício 4
+
+// function booksOrderedByReleaseYearDesc(array) {
+//     return array.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear);
+//   }
+  
+//   console.log(booksOrderedByReleaseYearDesc(books));
+
