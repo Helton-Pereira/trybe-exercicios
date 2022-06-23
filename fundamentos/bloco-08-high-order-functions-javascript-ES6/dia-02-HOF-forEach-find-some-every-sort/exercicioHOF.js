@@ -70,32 +70,38 @@ const books = [
 
 //   Exercício 2
 // solução tosca
-function smallerName(array) {
-    let nameBook;
-    array.forEach((element) => {
-        if (!nameBook || element.name.length < nameBook.length) {
-            nameBook = element.name
-        }
-    });
+// function smallerName(array) {
+//     let nameBook;
+//     array.forEach((element) => {
+//         if (!nameBook || element.name.length < nameBook.length) {
+//             nameBook = element.name
+//         }
+//     });
   
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
+//     // Variável nameBook que receberá o valor do menor nome;
+//     return nameBook;
+//   }
+
+//   console.log(smallerName(books));
+
+// //   solução elegante
+
+// function smallerName(array) {
+//     let nameBook;
+//     array.forEach((element) => {
+//         if (!nameBook || element.name.length < nameBook.length) {
+//             nameBook = element.name
+//         }
+//     });
+  
+//     // Variável nameBook que receberá o valor do menor nome;
+//     return nameBook;
+//   }
+
+// Exercício 3
+
+function getNamedBook(array) {
+    return array.find((book) => book.name.length === 26)
   }
 
-  console.log(smallerName(books));
-
-//   solução elegante
-
-function smallerName(array) {
-    let nameBook;
-    array.forEach((element) => {
-        if (!nameBook || element.name.length < nameBook.length) {
-            nameBook = element.name
-        }
-    });
-  
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
-  }
-
-  
+  console.log(getNamedBook(books));
