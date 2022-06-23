@@ -125,9 +125,18 @@ const books = [
 
 // Exercício 6
 
-function someBookWasReleaseOnThe80s(array) {
-    return array.some((book) => book.releaseYear >= 1981 && book.releaseYear <= 1990)
+// function someBookWasReleaseOnThe80s(array) {
+//     return array.some((book) => book.releaseYear >= 1981 && book.releaseYear <= 1990)
+//   }
+
+//   console.log(someBookWasReleaseOnThe80s(books));
+  
+// Exercício 7
+
+function authorUnique(array) {
+    return array.every((book => 
+        !array.some((booksSome) =>
+        (booksSome.author.birthYear === book.author.birthYear) && (booksSome.author.name !== book.author.name))));
   }
 
-  console.log(someBookWasReleaseOnThe80s(books));
-  
+  console.log(authorUnique(books));
