@@ -117,8 +117,17 @@ const books = [
 // Exercício 5
 
 
-function everyoneWasBornOnSecXX(array) {
-  return array.every((book) => book.author.birthYear >= 1901)
-}
+// function everyoneWasBornOnSecXX(array) {
+//   return array.every((book) => book.author.birthYear >= 1901)
+// }
 
-console.log(everyoneWasBornOnSecXX(books));
+// console.log(everyoneWasBornOnSecXX(books));
+
+// Exercício 6
+
+function someBookWasReleaseOnThe80s(array) {
+    return array.some((book) => book.releaseYear >= 1981 && book.releaseYear <= 1990)
+  }
+
+  console.log(someBookWasReleaseOnThe80s(books));
+  
