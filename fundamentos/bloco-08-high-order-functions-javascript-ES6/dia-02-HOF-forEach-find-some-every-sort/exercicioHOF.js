@@ -64,9 +64,38 @@ const books = [
   // Adicione o código do exercício aqui:
 //   Exercício 1
 
-function authorBornIn1947(array) {
-    return array.find((element) => element.author.birthYear === 1947).author.name
+// function authorBornIn1947(array) {
+//     return array.find((element) => element.author.birthYear === 1947).author.name
+//   }
+
+//   Exercício 2
+// solução tosca
+function smallerName(array) {
+    let nameBook;
+    array.forEach((element) => {
+        if (!nameBook || element.name.length < nameBook.length) {
+            nameBook = element.name
+        }
+    });
+  
+    // Variável nameBook que receberá o valor do menor nome;
+    return nameBook;
   }
 
-  console.log(authorBornIn1947(books));
+  console.log(smallerName(books));
+
+//   solução elegante
+
+function smallerName(array) {
+    let nameBook;
+    array.forEach((element) => {
+        if (!nameBook || element.name.length < nameBook.length) {
+            nameBook = element.name
+        }
+    });
+  
+    // Variável nameBook que receberá o valor do menor nome;
+    return nameBook;
+  }
+
   
