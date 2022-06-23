@@ -114,3 +114,11 @@ const books = [
   
 //   console.log(booksOrderedByReleaseYearDesc(books));
 
+// Exercício 5
+
+
+function everyoneWasBornOnSecXX(array) {
+  return array.every((book) => book.author.birthYear >= 1901)
+}
+
+console.log(everyoneWasBornOnSecXX(books));
