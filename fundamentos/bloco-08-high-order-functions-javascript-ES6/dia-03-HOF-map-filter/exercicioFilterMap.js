@@ -101,3 +101,11 @@ const books = [
 //   };
 
 //   console.log(fantasyOrScienceFictionAuthors(books));
+
+// Exercício 6
+
+// function oldBooks(array) {
+//     return array.filter((book) => book.releaseYear < 1962).map((book) => book.name)
+//   }
+
+//   console.log(oldBooks(books));
