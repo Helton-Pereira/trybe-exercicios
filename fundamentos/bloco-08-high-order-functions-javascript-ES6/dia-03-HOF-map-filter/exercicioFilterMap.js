@@ -88,8 +88,16 @@ const books = [
 
 // Exercício 4
 
-function oldBooksOrdered(array) {
-    return array.filter((book) => book.releaseYear < 1962).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear);
-  }
+// function oldBooksOrdered(array) {
+//     return array.filter((book) => book.releaseYear < 1962).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear);
+//   }
 
-  console.log(oldBooksOrdered(books));
+//   console.log(oldBooksOrdered(books));
+
+// Exercício 5
+
+// function fantasyOrScienceFictionAuthors(array) {
+//     return array.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica').map((name) => name.author.name).sort();
+//   };
+
+//   console.log(fantasyOrScienceFictionAuthors(books));
