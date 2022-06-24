@@ -80,10 +80,16 @@ const books = [
 
 //   Exercício 3
 
-function fantasyOrScienceFiction(array) {
-    return array.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica')
+// function fantasyOrScienceFiction(array) {
+//     return array.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica')
+//   }
+
+//   console.log(fantasyOrScienceFiction(books));
+
+// Exercício 4
+
+function oldBooksOrdered(array) {
+    return array.filter((book) => book.releaseYear < 1962).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear);
   }
 
-  console.log(fantasyOrScienceFiction(books));
-
-  
+  console.log(oldBooksOrdered(books));
