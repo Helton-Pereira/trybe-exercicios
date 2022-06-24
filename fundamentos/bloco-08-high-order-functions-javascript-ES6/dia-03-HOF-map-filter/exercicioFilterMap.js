@@ -65,10 +65,17 @@ const books = [
 
 //   Exercício 1
 
-  function formatedBookNames(array) {
-    return array.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`)
-  }
+//   function formatedBookNames(array) {
+//     return array.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`)
+//   }
 
-  console.log(formatedBookNames(books));
+//   console.log(formatedBookNames(books));
+
+// Exercício 2
+
+function nameAndAge(array) {
+    return array.map((book) => ({author: book.author.name, age: book.releaseYear - book.author.birthYear})).sort((authorA , authorB) => authorA.age - authorB.age)
+} 
+  console.log(nameAndAge(books));
 
   
