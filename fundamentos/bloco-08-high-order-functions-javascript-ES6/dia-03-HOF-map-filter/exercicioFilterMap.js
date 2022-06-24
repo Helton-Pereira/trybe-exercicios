@@ -73,9 +73,17 @@ const books = [
 
 // Exercício 2
 
-function nameAndAge(array) {
-    return array.map((book) => ({author: book.author.name, age: book.releaseYear - book.author.birthYear})).sort((authorA , authorB) => authorA.age - authorB.age)
-} 
-  console.log(nameAndAge(books));
+// function nameAndAge(array) {
+//     return array.map((book) => ({author: book.author.name, age: book.releaseYear - book.author.birthYear})).sort((authorA , authorB) => authorA.age - authorB.age)
+// } 
+//   console.log(nameAndAge(books));
+
+//   Exercício 3
+
+function fantasyOrScienceFiction(array) {
+    return array.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica')
+  }
+
+  console.log(fantasyOrScienceFiction(books));
 
   
