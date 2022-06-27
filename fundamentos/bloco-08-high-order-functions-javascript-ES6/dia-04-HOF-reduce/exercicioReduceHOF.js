@@ -218,21 +218,39 @@ const books = [
 // Exercício 4
 
 
-const expectedResult = {
-    id: 1,
-    name: 'As Crônicas de Gelo e Fogo',
-    genre: 'Fantasia',
-    author: {
-      name: 'George R. R. Martin',
-      birthYear: 1948,
-    },
-    releaseYear: 1991,
-  };
+// const expectedResult = {
+//     id: 1,
+//     name: 'As Crônicas de Gelo e Fogo',
+//     genre: 'Fantasia',
+//     author: {
+//       name: 'George R. R. Martin',
+//       birthYear: 1948,
+//     },
+//     releaseYear: 1991,
+//   };
   
-  function longestNamedBook(array) {
-    return array.reduce((acc, curr) => {
-       return (acc.name.length > curr.name.length) ? acc : curr;
-    })
+//   function longestNamedBook(array) {
+//     return array.reduce((acc, curr) => {
+//        return (acc.name.length > curr.name.length) ? acc : curr;
+//     })
+//   }
+
+//   console.log(longestNamedBook(books))
+
+// Exercício 5
+
+const names = [
+    'Aanemarie', 'Adervandes', 'Akifusa',
+    'Abegildo', 'Adicellia', 'Aladonata',
+    'Abeladerco', 'Adieidy', 'Alarucha',
+  ];
+  
+  function containsA(array) {
+    return array.reduce((acc, curr) =>
+    acc + curr.split('').reduce((accumulator, current) => {
+        if (current === 'a' || current === 'A') return accumulator + 1;
+        return accumulator
+    }, 0), 0);
   }
 
-  console.log(longestNamedBook(books))
+  console.log(containsA(names));
