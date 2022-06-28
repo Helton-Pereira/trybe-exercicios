@@ -213,3 +213,13 @@
 //   console.log(shipLength(ships[1])); // 'Queen Mary 2 is 1132 feet long'
 //   console.log(shipLength(ships[2])); // 'Yamato is 256 meters long'
 
+// Exercício 8
+
+// const greet = (name, greeting = 'Hi') => {
+//     return `${greeting}, ${name}`
+// }
+
+// console.log(greet('John')) // 'Hi John'
+// console.log(greet('John', 'Good morning')) // 'Good morning John'
+// console.log(greet('Isabela', 'Oi')) // 'Oi Isabela'
+
