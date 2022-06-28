@@ -51,111 +51,117 @@
 // };
 
 // const otherPerson = {
-//   firstName: 'Ivan',
-//   lastName: 'Ivanovich',
-//   nationality: 'Russian',
-// };
+// //   firstName: 'Ivan',
+// //   lastName: 'Ivanovich',
+// //   nationality: 'Russian',
+// // };
 
-// console.log(getNationality(otherPerson)); // Ivan is Russian
-// console.log(getNationality(person));
+// // console.log(getNationality(otherPerson)); // Ivan is Russian
+// // console.log(getNationality(person));
 
-// const getPosition = (latitude, longitude) => ({
-//     latitude,
-//     longitude});
+// // const getPosition = (latitude, longitude) => ({
+// //     latitude,
+// //     longitude});
   
-//   console.log(getPosition(-19.8157, -43.9542));
+// //   console.log(getPosition(-19.8157, -43.9542));
 
-// const greeting = (user = 'Usuário') => console.log(`Welcome ${user}!`);
+// // const greeting = (user = 'Usuário') => console.log(`Welcome ${user}!`);
 
-// greeting(); 
+// // greeting(); 
 
-// const multiply = (number, value = 1) => {
-//     return number * value
-//   };
+// // const multiply = (number, value = 1) => {
+// //     return number * value
+// //   };
   
-//   console.log(multiply(3));
+// //   console.log(multiply(3));
 
-// Exercício 1
+// // Exercício 1
 
-// const rectangleArea = (width, height) => width * height;
+// // const rectangleArea = (width, height) => width * height;
 
-// const rectangle1 = [1, 2];
-// const rectangle2 = [3, 5];
-// const rectangle3 = [6, 9];
-// const rectangles = [rectangle1, rectangle2, rectangle3];
+// // const rectangle1 = [1, 2];
+// // const rectangle2 = [3, 5];
+// // const rectangle3 = [6, 9];
+// // const rectangles = [rectangle1, rectangle2, rectangle3];
 
-// rectangles.forEach((rectangle) => {
-//   rectangleArea(...rectangle) 
-//   console.log(rectangle[0] * rectangle[1]);
-// // });
+// // rectangles.forEach((rectangle) => {
+// //   rectangleArea(...rectangle) 
+// //   console.log(rectangle[0] * rectangle[1]);
+// // // });
 
-// // Exercício 2
+// // // Exercício 2
 
-// // const sum = (...numbers) => {
-// //     return numbers.reduce((acc, curr) => acc + curr,0)
-// // }
+// // // const sum = (...numbers) => {
+// // //     return numbers.reduce((acc, curr) => acc + curr,0)
+// // // }
 
-// // console.log(sum(2,3,5,10))
+// // // console.log(sum(2,3,5,10))
 
-// // Exercício 3
+// // // Exercício 3
 
-// const alex = {
-//     name: 'Alex',
-//     age: 26,
-//     likes: ['fly fishing'],
-//     nationality: 'Australian',
-//   };
+// // const alex = {
+// //     name: 'Alex',
+// //     age: 26,
+// //     likes: ['fly fishing'],
+// //     nationality: 'Australian',
+// //   };
   
-//   const gunnar = {
-//     name: 'Gunnar',
-//     age: 30,
-//     likes: ['hiking', 'scuba diving', 'taking pictures'],
-//     nationality: 'Icelandic',
-//   };
+// //   const gunnar = {
+// //     name: 'Gunnar',
+// //     age: 30,
+// //     likes: ['hiking', 'scuba diving', 'taking pictures'],
+// //     nationality: 'Icelandic',
+// //   };
   
-//   // complete a assinatura da função abaixo
-//   const personLikes = ({name, age, likes}) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
+// //   // complete a assinatura da função abaixo
+// //   const personLikes = ({name, age, likes}) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
   
-//   console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
-//   console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
+// //   console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
+// //   console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
 
-//   Exercício 4
+// //   Exercício 4
 
-const people = [
-    {
-      name: 'Nicole',
-      bornIn: 1992,
-      nationality: 'Australian',
-    },
-    {
-      name: 'Harry',
-      bornIn: 2008,
-      nationality: 'Australian',
-    },
-    {
-      name: 'Toby',
-      bornIn: 1901,
-      nationality: 'Australian',
-    },
-    {
-      name: 'Frida',
-      bornIn: 1960,
-      nationality: 'Dannish',
-    },
-    {
-      name: 'Fernando',
-      bornIn: 2001,
-      nationality: 'Brazilian',
-    },
-  ];
-  
+// const people = [
+//     {
+//       name: 'Nicole',
+//       bornIn: 1992,
+//       nationality: 'Australian',
+//     },
+//     {
+//       name: 'Harry',
+//       bornIn: 2008,
+//       nationality: 'Australian',
+//     },
+//     {
+//       name: 'Toby',
+//       bornIn: 1901,
+//       nationality: 'Australian',
+//     },
+//     {
+//       name: 'Frida',
+//       bornIn: 1960,
+//       nationality: 'Dannish',
+//     },
+//     {
+//       name: 'Fernando',
+//       bornIn: 2001,
+//       nationality: 'Brazilian',
+//     },
+//   ];
 
+//   const filterPeople = (array) => array.filter(
+//         ({nationality, bornIn, name}) => {
+//             if (bornIn >= 1901 && bornIn <= 2000 && nationality === 'Australian') {
+//             return name
+//             }
+//     })   
 
-  const filterPeople = (array) => array.filter(
-        ({nationality, bornIn, name}) => {
-            if (bornIn >= 1901 && bornIn <= 2000 && nationality === 'Australian') {
-            return name
-            }
-    })   
+//   console.log(filterPeople(people));
 
-  console.log(filterPeople(people));
+// Exercício 5
+
+// const myList = [1, 2, 3];
+
+// const swap = ([a,b,c]) => [c,b,a]
+
+// console.log(swap(myList));
