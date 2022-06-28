@@ -165,3 +165,23 @@
 // const swap = ([a,b,c]) => [c,b,a]
 
 // console.log(swap(myList));
+
+// Exercício 6
+
+const palio = ['Palio', 'Fiat', 2019];
+const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
+const chiron = ['Chiron', 'Bugatti', 2016];
+
+// escreva toObject abaixo
+
+const toObject = ([name, brand, year]) => {
+    const carObj = {
+        name,
+        brand,
+        year,
+    }
+    return carObj
+}
+
+console.log(toObject(shelbyCobra));
+
