@@ -87,36 +87,75 @@
 // rectangles.forEach((rectangle) => {
 //   rectangleArea(...rectangle) 
 //   console.log(rectangle[0] * rectangle[1]);
-// });
+// // });
 
-// Exercício 2
+// // Exercício 2
 
-// const sum = (...numbers) => {
-//     return numbers.reduce((acc, curr) => acc + curr,0)
-// }
+// // const sum = (...numbers) => {
+// //     return numbers.reduce((acc, curr) => acc + curr,0)
+// // }
 
-// console.log(sum(2,3,5,10))
+// // console.log(sum(2,3,5,10))
 
-// Exercício 3
+// // Exercício 3
 
-const alex = {
-    name: 'Alex',
-    age: 26,
-    likes: ['fly fishing'],
-    nationality: 'Australian',
-  };
+// const alex = {
+//     name: 'Alex',
+//     age: 26,
+//     likes: ['fly fishing'],
+//     nationality: 'Australian',
+//   };
   
-  const gunnar = {
-    name: 'Gunnar',
-    age: 30,
-    likes: ['hiking', 'scuba diving', 'taking pictures'],
-    nationality: 'Icelandic',
-  };
+//   const gunnar = {
+//     name: 'Gunnar',
+//     age: 30,
+//     likes: ['hiking', 'scuba diving', 'taking pictures'],
+//     nationality: 'Icelandic',
+//   };
   
-  // complete a assinatura da função abaixo
-  const personLikes = ({name, age, likes}) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
+//   // complete a assinatura da função abaixo
+//   const personLikes = ({name, age, likes}) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
   
-  console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
-  console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
+//   console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
+//   console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
 
 //   Exercício 4
+
+const people = [
+    {
+      name: 'Nicole',
+      bornIn: 1992,
+      nationality: 'Australian',
+    },
+    {
+      name: 'Harry',
+      bornIn: 2008,
+      nationality: 'Australian',
+    },
+    {
+      name: 'Toby',
+      bornIn: 1901,
+      nationality: 'Australian',
+    },
+    {
+      name: 'Frida',
+      bornIn: 1960,
+      nationality: 'Dannish',
+    },
+    {
+      name: 'Fernando',
+      bornIn: 2001,
+      nationality: 'Brazilian',
+    },
+  ];
+  
+
+
+  const filterPeople = (array) => array.filter(
+        ({nationality, bornIn, name}) => {
+            if (bornIn >= 1901 && bornIn <= 2000 && nationality === 'Australian') {
+            return name
+            }
+    })   
+
+  console.log(filterPeople(people));
