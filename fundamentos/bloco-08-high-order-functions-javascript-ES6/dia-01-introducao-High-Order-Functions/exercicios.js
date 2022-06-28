@@ -39,3 +39,4 @@ const raffle = (myNumber, callback) => {
 };
 
 console.log(raffle(2, checkNumber));
+
