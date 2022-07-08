@@ -9,7 +9,7 @@ it('Testa se ao passar "gUGu" como paramêtro, retorna "GUGU"', (done) => {
         try {
             expect(str).toBe('GUGU');
             done();
-        } catch(error) {
+        } catch (error) {
             done(error);
         }
     });
