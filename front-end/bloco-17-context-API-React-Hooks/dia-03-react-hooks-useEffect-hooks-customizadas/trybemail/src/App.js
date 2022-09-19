@@ -9,7 +9,7 @@ function App() {
   const [messages, setMessages] = useState(messagesList)
 
   useEffect(() => {
-    const isAllMessagesRead = messages.every((status) => status === READ);
+    const isAllMessagesRead = messages.every((message) => message.status === READ);
 
     if(isAllMessagesRead) {
       alert('Nenhuma mensagem a ser lida!')
