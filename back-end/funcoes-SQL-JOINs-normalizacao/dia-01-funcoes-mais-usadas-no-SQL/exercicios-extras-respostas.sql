@@ -15,8 +15,8 @@ WHERE release_year = 2006
 GROUP BY rating;
 
 -- 3
-SELECT district, COUNT(*) FROM address
-GROUP BY district;
+SELECT city_id, COUNT(*) FROM address
+GROUP BY city_id;
 
 -- 4
 SELECT MONTH(payment_date), YEAR(payment_date), SUM(amount) FROM payment
@@ -27,9 +27,21 @@ SELECT amount, COUNT(*) FROM payment
 WHERE amount <= 1.99
 GROUP BY amount;
 
--- 6
-SELECT SUM(amount), YEAR(payment_date), MONTH(payment_date) FROM payment
-GROUP BY MONTH(payment_date), YEAR(payment_date);
+-- or
+SELECT amount, COUNT(amount) FROM sakila.payment
+GROUP BY amount HAVING amount <= 1.99;
 
-SELECT rental_id, COUNT(*) FROM payment
-GROUP BY rental_id ORDER BY rental_id DESC;
+-- 6
+SELECT amount, SUM(amount), YEAR(payment_date), MONTH(payment_date) FROM payment
+GROUP BY amount, MONTH(payment_date), YEAR(payment_date) ORDER BY SUM(amount) DESC;
+
+-- answer key
+SELECT 
+  amount,
+  SUM(amount) AS `soma`,
+  YEAR(payment_date),
+  MONTH(payment_date)
+FROM
+  sakila.payment
+GROUP BY amount , YEAR(payment_date) , MONTH(payment_date)
+ORDER BY `soma` DESC;
