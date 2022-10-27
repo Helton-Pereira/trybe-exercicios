@@ -1,9 +1,0 @@
-- Animals: id, nome, espécie, sexo, idade, localização
-- Caretaker: id, first_name, last_name, manager_id
-- Manage: id, first_name, last_name
-- Cuidador e animal: id, animal_id, cuidador_id
-
-Um animal pode ter vários cuidadoes
-Um cuidador pode cuidar de vários animais
-Um manager pode ter vários cuidadoes
-Um cuidador possui um gerente
