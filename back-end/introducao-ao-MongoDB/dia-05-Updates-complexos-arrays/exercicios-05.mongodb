@@ -1,0 +1,186 @@
+/* Ex 1 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  {
+    $push: { category: 'superhero' }
+  }
+);
+
+/* Ex 2 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  {
+    $push: {
+      category: {
+        $each: ['villain', 'comic-based']
+      }
+    }
+  }
+);
+
+/* Ex 3 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  { $pull: { category: 'action' } }
+);
+
+/* Ex 4 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  { $pop: { category: -1 } }
+);
+
+/* Ex 5 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  { $pop: { category: 1 } }
+);
+
+/* Ex 6 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  { $addToSet: { category: 'action' }}
+);
+
+/* Ex 7 */
+
+use('cinema');
+
+db.movies.updateMany(
+  { title: { $in: ['Batman', 'Home Alone'] } },
+  { $addToSet: { category: `90's` } } /* originalmente seria $push */
+);
+
+
+/* Ex 8 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Home Alone'},
+  { $push: {
+      cast: {
+        $each: [
+          {
+            "actor": "Macaulay Culkin",
+            "character": "Kevin"
+          },
+          {
+            "actor": "Joe Pesci",
+            "character": "Harry"
+          },
+          {
+            "actor": "Daniel Stern"
+          }
+        ]
+      }
+    }
+  }
+);
+
+/* Ex 9 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Home Alone', 'cast.actor': 'Daniel Stern' },
+  {
+    $set: { 'cast.$.character': 'Marv' }
+  }
+);
+
+/* Ex 10 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Batman' },
+  {
+    $push: {
+      cast: {
+        $each: [
+            {
+              "character": "Batman"
+            },
+            {
+              "character": "Alfred"
+            },
+            {
+              "character": "Coringa"
+            }
+          ]
+        }
+      }
+    }
+);
+
+/* Ex 11 */
+
+use('cinema');
+
+db.movies.updateOne(
+  {
+    title: "Batman",
+    "cast.character": "Batman",
+  },
+  {
+    $push: { "cast.$.actor": "Christian Bale" },
+  },
+);
+
+db.movies.updateOne(
+  { title: 'Batman', 'cast.characyer': 'Alfred' },
+  {
+    $push: { 'cast.$.actor': 'Michael Caine'}
+  }
+);
+
+db.movies.updateOne(
+  {
+    title: "Batman",
+    "cast.character": "Coringa",
+  },
+  {
+    $push: { "cast.$.actor": "Heath Ledger" },
+  },
+);
+
+
+/* Ex 12 */
+
+use('cinema');
+
+db.movies.updateOne(
+  { title: 'Batman', 'cast.character': 'Batman' },
+  {
+    $push: {
+      'cast.$.actor': {
+        $each: ['Michael Keaton', 'Val Kilmer', 'George Clooney'],
+        $sort: 1,
+      }
+    }
+  }
+);
+
+
+use('cinema');
+
+db.movies.find().pretty();
