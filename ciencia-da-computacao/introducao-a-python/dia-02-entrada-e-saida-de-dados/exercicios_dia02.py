@@ -10,6 +10,7 @@ if __name__ == "__main__":
     name = input('Digite um nome: ')
     stair_name(name) """
 
+
 # exercício 4
 
 import json
